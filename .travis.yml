@@ -18,7 +18,7 @@ script:
   - rm -rf .gh_dist
   - mkdir .gh_dist
 # clone remote repo to "_site"
-  - git clone https://voyagerwoo:${GH_TOKEN}@github.com/$GH_PAGE_REPO.git --branch master .gh_dist
+  - git clone https://voyagerwoo:${GH_TOKEN}@github.com/voyagerwoo/$GH_PAGE_REPO.git --branch master .gh_dist
 # dist into ".gh_dist"
   - cp -r dist/* .gh_dist/
 # push
