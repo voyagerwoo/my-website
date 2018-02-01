@@ -15,4 +15,5 @@ deploy:
   on:
     branch: master
   local-dir: dist
-  repo: $GH_PAGE_REPO
+  repo: 
+  
