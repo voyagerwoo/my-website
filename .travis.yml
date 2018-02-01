@@ -15,4 +15,4 @@ deploy:
   on:
     branch: master
   local-dir: dist
-  repo: https://github.com/voyagerwoo/voyagerwoo.github.io
+  repo: $GH_PAGE_REPO
