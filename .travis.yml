@@ -7,17 +7,24 @@ cache:
   directories:
     - node_modules
 
-install:
+before_script:
   - npm install
   - npm run build
 
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GH_TOKEN
-  keep-history: true
-  local-dir: dist
-  repo: $GH_PAGE_REPO
-  on:
-    branch: master
-  target-branch: master
+script:
+# enable error reporting to the console
+  - set -e
+# cleanup ".gh_dist"
+  - rm -rf .gh_dist
+  - mkdir .gh_dist
+# clone remote repo to "_site"
+  - git clone https://${GH_TOKEN}@github.com/$GH_PAGE_REPO.git --branch master .gh_dist
+# dist into ".gh_dist"
+  - cp -r dist/* .gh_dist/
+# push
+  - cd .gh_dist
+  - git config user.email "voyagerwoo@gmail.com"
+  - git config user.name "voyagerwoo"
+  - git add --all
+  - git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
+  - git push --force origin master
