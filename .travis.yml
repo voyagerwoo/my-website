@@ -1,13 +1,17 @@
 language: node_js
 node_js:
   - "7"
+cache:
+  directories:
+    - node_modules
 install:
   - npm install
   - npm run build
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: AonxvzxxC9JDx5q5xS6x  # Set in travis-ci.org dashboard, marked secure
   keep-history: true
   on:
     branch: master
+  local-dir: dist
+  repo: https://github.com/voyagerwoo/voyagerwoo.github.io
