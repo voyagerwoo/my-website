@@ -17,6 +17,7 @@ deploy:
   github-token: $GH_TOKEN
   keep-history: true
   local-dir: dist
-  repo: '$GH_PAGE_REPO'
+  repo: $GH_PAGE_REPO
   on:
     branch: master
+  target-branch: master
