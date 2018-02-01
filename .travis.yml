@@ -16,4 +16,3 @@ deploy:
   repo: $GH_PAGE_REPO
   on:
     branch: master
-    
