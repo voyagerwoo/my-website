@@ -26,5 +26,5 @@ script:
   - git config user.email "voyagerwoo@gmail.com"
   - git config user.name "voyagerwoo"
   - git add --all
-  - git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
+  - git commit -a -m "Travis \#$TRAVIS_BUILD_NUMBER"
   - git push --force origin master
