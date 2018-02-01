@@ -10,7 +10,6 @@ install:
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: 5e02fc0469ded2fa009a3e6051c8f25accb84df8
   keep-history: true
   on:
     branch: master
