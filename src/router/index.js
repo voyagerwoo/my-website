@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-import Editor from '@/components/Editor'
+import About from '@/components/About'
+import DevLog from '@/components/DevLog'
+import LifeLog from '@/components/LifeLog'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
@@ -13,9 +15,26 @@ export default new Router({
       component: Home
     },
     {
-      path: '/editor',
-      name: 'Editor',
-      component: Editor
+      path: '/about',
+      name: 'About',
+      component: About
+    },
+    {
+      path: '/devlog',
+      name: 'Dev Log',
+      component: DevLog
+    },
+    {
+      path: '/lifelog',
+      name: 'Life Log',
+      component: LifeLog
     }
   ]
 })
+
+router.beforeEach((to, from, next) => {
+  document.title = to.name
+  next()
+})
+
+export default router
