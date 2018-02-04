@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <h1><a>Softworld</a></h1>
-    <div class='header-nav'>
+    <h1 class="title"><a href="#/" :class="titleStyle()" >Softworld</a></h1>
+    <div class="header-nav">
         <ul>
             <li :class="navStyle('about')"><a href="#/about">about</a></li>
             <li :class="navStyle('devlog')"><a href="#/devlog">devlog</a></li>
@@ -17,7 +17,10 @@ export default {
   name: 'App',
   methods: {
     navStyle (name) {
-      return location.hash.startsWith(`#/${name}`) ? 'selected' : ''
+      return location.hash.startsWith(`#/${name}`) ? 'underline' : ''
+    },
+    titleStyle () {
+      return location.hash === '#/' ? 'underline' : ''
     }
   }
 }
@@ -33,6 +36,10 @@ export default {
   margin-top: 60px;
 }
 
+.title a {
+  color:#000000;
+  text-decoration: none;
+}
 .header-nav ul {
   list-style: none;
   padding:0;
@@ -47,7 +54,7 @@ export default {
   display: block;
   text-decoration: none;
 }
-.header-nav ul li.selected {
+.underline {
   border-width: 0 0 2px;
   border-style: solid;
 }
