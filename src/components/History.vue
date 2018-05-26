@@ -1,5 +1,5 @@
 <template>
   <section>
-      <h2>Life Log</h2>
+      <h2>History</h2>
   </section>
 </template>

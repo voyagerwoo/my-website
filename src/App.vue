@@ -4,8 +4,8 @@
     <div class="header-nav">
         <ul>
             <li :class="navStyle('about')"><a href="#/about">about</a></li>
-            <li :class="navStyle('devlog')"><a href="#/devlog">devlog</a></li>
-            <li :class="navStyle('lifelog')"><a href="#/lifelog">lifelog</a></li>
+            <li :class="navStyle('history')"><a href="#/history">history</a></li>
+            <li :class="navStyle('portfolio')"><a href="#/portfolio">portfolio</a></li>
         </ul>
     </div>
     <router-view/>

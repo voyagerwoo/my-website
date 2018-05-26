@@ -2,8 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import About from '@/components/About'
-import DevLog from '@/components/DevLog'
-import LifeLog from '@/components/LifeLog'
+import History from '@/components/History'
+import Portfolio from '@/components/Portfolio'
 
 Vue.use(Router)
 
@@ -20,14 +20,14 @@ const router = new Router({
       component: About
     },
     {
-      path: '/devlog',
-      name: 'Dev Log',
-      component: DevLog
+      path: '/history',
+      name: 'History',
+      component: History
     },
     {
-      path: '/lifelog',
-      name: 'Life Log',
-      component: LifeLog
+      path: '/portfolio',
+      name: 'Portfolio',
+      component: Portfolio
     }
   ]
 })
