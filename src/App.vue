@@ -62,4 +62,7 @@ export default {
   list-style-position: inside;
   padding: 0;
 }
+.markdown-wrap a {
+  text-decoration: none;
+}
 </style>
