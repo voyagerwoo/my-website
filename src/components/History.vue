@@ -1,5 +1,0 @@
-<template>
-  <section>
-      <h2>History</h2>
-  </section>
-</template>

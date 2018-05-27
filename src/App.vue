@@ -26,7 +26,7 @@ export default {
 }
 </script>
 
-<style lang="postcss" scoped>
+<style lang="postcss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -57,5 +57,8 @@ export default {
 .underline {
   border-width: 0 0 2px;
   border-style: solid;
+}
+ul {
+  list-style-position: inside;
 }
 </style>

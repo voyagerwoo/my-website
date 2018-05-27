@@ -1,9 +1,7 @@
 <template>
-  <section>
-    <div class="markdown-wrap">
-      <vue-markdown v-if="this.source">{{this.source}}</vue-markdown>
-    </div>
-  </section>
+  <div class="markdown-wrap">
+    <vue-markdown v-if="source">{{source}}</vue-markdown>
+  </div>
 </template>
 
 <script>
@@ -11,7 +9,8 @@ import VueMarkdown from 'vue-markdown'
 import readMarkdown from '../utils/readMarkdown'
 
 export default {
-  data () {
+  name: 'MDContents',
+  data: function () {
     return {
       source: ''
     }
@@ -19,9 +18,11 @@ export default {
   components: {
     VueMarkdown
   },
-  methods: {},
+  props: {
+    markdownName: String
+  },
   created () {
-    readMarkdown('about').then(r => {
+    readMarkdown(this.markdownName).then(r => {
       this.source = r
       return r
     })
