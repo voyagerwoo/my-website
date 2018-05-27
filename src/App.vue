@@ -58,7 +58,8 @@ export default {
   border-width: 0 0 2px;
   border-style: solid;
 }
-ul {
+.markdown-wrap ul {
   list-style-position: inside;
+  padding: 0;
 }
 </style>
