@@ -1,12 +1,14 @@
 <template>
   <div id="app">
-    <h1 class="title"><a href="#/" :class="titleStyle()" >Softworld</a></h1>
-    <div class="header-nav">
-        <ul>
-            <li :class="navStyle('about')"><a href="#/about">about</a></li>
-            <li :class="navStyle('history')"><a href="#/history">history</a></li>
-            <li :class="navStyle('portfolio')"><a href="#/portfolio">portfolio</a></li>
-        </ul>
+    <div class="header">
+      <h1 class="title"><a href="#/" :class="titleStyle()" >Softworld</a></h1>
+      <div class="header-nav">
+          <ul>
+              <li :class="navStyle('about')"><a href="#/about">about</a></li>
+              <li :class="navStyle('history')"><a href="#/history">history</a></li>
+              <li :class="navStyle('portfolio')"><a href="#/portfolio">portfolio</a></li>
+          </ul>
+      </div>
     </div>
     <router-view/>
   </div>
@@ -31,22 +33,46 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #000000;
-  margin-top: 60px;
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: left;
 }
-
+.header {
+  margin: 1em;
+}
+.title {
+  display: inline-block;
+  margin: 0 0.8em 0 0;
+}
 .title a {
   color:#000000;
   text-decoration: none;
+}
+.header-nav {
+  display: inline-block;
 }
 .header-nav ul {
   list-style: none;
   padding:0;
 }
+
+@media screen and (max-width: 450px) {
+  .header-nav {
+    display: block;
+  }
+  .title {
+    display: block;
+    margin: 0;
+  }
+  .header {
+    text-align: center;
+  }
+}
+
 .header-nav ul li {
   display: inline-block;
-  margin: 0 0.7em;
+  margin: 0 0.3em;
   padding: 0 0.5em;
 }
 .header-nav ul li a {
@@ -57,12 +83,5 @@ export default {
 .underline {
   border-width: 0 0 2px;
   border-style: solid;
-}
-.markdown-wrap ul {
-  list-style-position: inside;
-  padding: 0;
-}
-.markdown-wrap a {
-  text-decoration: none;
 }
 </style>

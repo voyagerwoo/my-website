@@ -31,4 +31,14 @@ export default {
 </script>
 
 <style>
+.markdown-wrap {
+  padding: 1em;
+}
+.markdown-wrap ul {
+  list-style-position: inside;
+  padding: 0;
+}
+.markdown-wrap a {
+  text-decoration: none;
+}
 </style>
