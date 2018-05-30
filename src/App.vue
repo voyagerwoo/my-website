@@ -30,7 +30,7 @@ export default {
 
 <style lang="postcss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Iropke Batang","IropkeBatang","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #000000;
