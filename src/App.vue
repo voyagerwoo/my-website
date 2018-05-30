@@ -29,6 +29,7 @@ export default {
 </script>
 
 <style lang="postcss">
+@import url('//cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css');
 #app {
   font-family: "Iropke Batang","IropkeBatang","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
   -webkit-font-smoothing: antialiased;
