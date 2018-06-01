@@ -33,7 +33,7 @@ const router = new Router({
 })
 
 router.beforeEach((to, from, next) => {
-  document.title = to.name
+  document.title = "Voyager Woo's " + to.name
   next()
 })
 
