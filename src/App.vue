@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="header">
-      <h1 class="title"><a href="#/" :class="titleStyle()" >Softworld</a></h1>
+      <h1 class="title"><a href="#/" :class="titleStyle()" >VoyagerWoo</a></h1>
       <div class="header-nav">
           <ul>
               <li :class="navStyle('about')"><a href="#/about">about</a></li>
