@@ -1,5 +1,5 @@
 <template>
-  <div class="markdown-wrap">
+  <div class="markdown-wrap markdown-body">
     <vue-markdown v-if="source">{{source}}</vue-markdown>
   </div>
 </template>
