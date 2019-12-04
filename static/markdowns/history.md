@@ -1,7 +1,7 @@
-## 이력
+## Experience
 
-- [I-scream Eud](https://www.home-learn.co.kr) 기반개발팀 (`2018.10 ~ 현재`)
-- [매쓰홀릭](http://www.matholic.com) 개발팀 (`2017.01 ~ 2018.08` 1년 8개월)
-- [11번가](http://www.11st.co.kr/) 프론트 개발팀 (`2014.02 ~ 2016.12` 2년 10개월)
+- [I-scream Eud](https://www.home-learn.co.kr) Backend Engineer, DevOps Engineer (`2018.10 ~ Present`)
+- [Matholic](http://www.matholic.com) Backend Engineer, Data Engineer (`2017.01 ~ 2018.08` 1 year 8 month)
+- [11st](http://www.11st.co.kr/) Backend Engineer, Web Programmer (`2014.02 ~ 2016.12` 2 year 10 month)
 
 

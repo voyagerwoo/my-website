@@ -6,7 +6,6 @@
           <ul>
               <li :class="navStyle('about')"><a href="#/about">about</a></li>
               <li :class="navStyle('history')"><a href="#/history">history</a></li>
-              <li :class="navStyle('portfolio')"><a href="#/portfolio">portfolio</a></li>
           </ul>
       </div>
     </div>
